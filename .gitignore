@@ -1,0 +1,89 @@
+# ─────────────────────────────────────────────
+# ENVIRONMENT & SECRETS – Never push these!
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+kaggle.json
+**/kaggle.json
+
+# ─────────────────────────────────────────────
+# NODE / NPM
+# ─────────────────────────────────────────────
+node_modules/
+archive/
+archive.zip
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+
+# ─────────────────────────────────────────────
+# BUILD OUTPUT
+# ─────────────────────────────────────────────
+dist/
+build/
+.vite/
+.cache/
+
+# ─────────────────────────────────────────────
+# PYTHON
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+*.whl
+venv/
+env/
+.venv/
+
+# Kaggle cached datasets (can be huge – 6+ GB)
+~/.cache/kagglehub/
+
+# ─────────────────────────────────────────────
+# SECURE STORAGE – Encrypted uploads & reports
+# ─────────────────────────────────────────────
+backend/uploads/
+backend/secure_store/
+backend/reports/
+*.enc
+*.compressed
+
+# ─────────────────────────────────────────────
+# LOGS
+# ─────────────────────────────────────────────
+logs/
+*.log
+backend/*.log
+frontend/*.log
+
+# ─────────────────────────────────────────────
+# OS & EDITOR JUNK
+# ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/settings.json
+*.suo
+*.user
+
+# ─────────────────────────────────────────────
+# TESTING & COVERAGE
+# ─────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
